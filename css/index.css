@@ -104,6 +104,10 @@ button {
   font-size: 20px;
   line-height: 24px;
   color: #000000;
+  transition: all 0.2s ease-out;
+}
+.header__links li a:hover {
+  opacity: 0.7;
 }
 .promo {
   width: 100%;
@@ -498,6 +502,10 @@ input:focus::placeholder {
   line-height: 28.8px;
   color: #000000;
   border-bottom: 1px solid #000000;
+  transition: all 0.2s ease-out;
+}
+.footer__link:hover {
+  opacity: 0.7;
 }
 .footer__list {
   display: flex;
@@ -510,6 +518,10 @@ input:focus::placeholder {
   font-size: 24px;
   line-height: 28.8px;
   color: #000000;
+  transition: all 0.2s ease-out;
+}
+.footer__list li a:hover {
+  opacity: 0.7;
 }
 /********works*********/
 .works {
@@ -613,4 +625,8 @@ input:focus::placeholder {
   font-size: 24px;
   line-height: 23.88px;
   color: #000000;
+  transition: all 0.2s ease-out;
+}
+.contacts__list li a:hover {
+  opacity: 0.7;
 }
