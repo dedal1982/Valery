@@ -511,6 +511,7 @@ input:focus::placeholder {
 .works__wrapper {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   padding-top: 185px;
   padding-bottom: 148px;
   box-sizing: border-box;
@@ -520,6 +521,21 @@ input:focus::placeholder {
   gap: 20px;
 }
 .works__top-item {
-  width: 910px;
+  width: 50%;
   height: 532px;
+}
+.works__bottom {
+  display: flex;
+  gap: 20px;
+}
+.works__bottom-left {
+  max-width: 538px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.works__left-img {
+  width: 100%;
+  height: 100%;
 }
