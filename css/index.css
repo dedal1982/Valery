@@ -155,6 +155,13 @@ h4 {
   line-height: 23.88px;
   color: #000000;
 }
+h5 {
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15.92px;
+  color: #000000;
+}
 .promo__button {
   width: 352px;
   height: 70px;
@@ -379,6 +386,7 @@ p {
 .contact__wrapper {
   padding-top: 185px;
   padding-bottom: 139px;
+  padding-left: 40px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -397,7 +405,6 @@ p {
   width: 481px;
   display: flex;
   flex-direction: column;
-  gap: 35px;
   margin-top: 60px;
 }
 input {
@@ -406,6 +413,9 @@ input {
   border: none;
   border-bottom: 2px solid #000000;
   outline: none;
+}
+input:not(:nth-child(3)) {
+  margin-bottom: 35px;
 }
 input,
 input::placeholder {
@@ -417,4 +427,48 @@ input::placeholder {
 }
 input:focus::placeholder {
   color: transparent;
+}
+.contact__form button {
+  width: 352px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000000;
+  font-family: "Gothic60", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 60px;
+}
+.contact__agreement {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-top: 53px;
+}
+.contact__agreement span {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+.contact__agreement span img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: none;
+}
+.contact__agreement span img.active {
+  display: block;
+}
+.contact__image {
+  width: 950px;
+  height: 657px;
+}
+.contact__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
