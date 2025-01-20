@@ -13,35 +13,38 @@ function updateSlider() {
   counterElement.textContent = `${currentIndex + 1}/${images.length}`;
 }
 
-arrowButton.addEventListener("click", () => {
-  currentIndex++;
-  if (currentIndex >= images.length) {
-    currentIndex = 0;
-  }
-  updateSlider();
-});
-
-updateSlider();
+if (arrowButton) {
+  arrowButton.addEventListener("click", () => {
+    currentIndex++;
+    if (currentIndex >= images.length) {
+      currentIndex = 0;
+    }
+    updateSlider();
+  });
+}
 
 const checkboxImage = document.getElementById("agreement-checkbox");
 const contactButton = document.querySelector(".contact__form button");
 let isChecked = false;
 
-checkboxImage.addEventListener("click", () => {
-  isChecked = !isChecked;
-  if (isChecked) {
-    checkboxImage.classList.add("active");
-    contactButton.removeAttribute("disabled");
-  } else {
-    checkboxImage.classList.remove("active");
-    contactButton.setAttribute("disabled", true);
-  }
-});
+if (checkboxImage) {
+  checkboxImage.addEventListener("click", () => {
+    isChecked = !isChecked;
+    if (isChecked) {
+      checkboxImage.classList.add("active");
+      contactButton.removeAttribute("disabled");
+    } else {
+      checkboxImage.classList.remove("active");
+      contactButton.setAttribute("disabled", true);
+    }
+  });
+}
 
 //отправка заявки
-document
-  .getElementById("submitForm")
-  .addEventListener("submit", function (event) {
+const submitForm = document.getElementById("submitForm");
+
+if (submitForm) {
+  submitForm.addEventListener("submit", function (event) {
     event.preventDefault();
     var formData = new FormData(this);
     fetch(
@@ -58,3 +61,40 @@ document
       })
       .catch((error) => console.error("Error:", error));
   });
+}
+
+//открытие фото в оверлее
+const worksImages = document.querySelectorAll(".works__wrapper img");
+
+if (worksImages) {
+  worksImages.forEach((item) => {
+    item.addEventListener("click", () => {
+      console.log(111);
+    });
+  });
+}
+
+//оверлей
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".works__wrapper img");
+  const overlay = document.getElementById("overlay");
+  const overlayImage = document.querySelector(".overlay__image");
+  const closeButton = document.getElementById("overlay-close");
+
+  images.forEach((image) => {
+    image.addEventListener("click", () => {
+      const src = image.getAttribute("src");
+      overlayImage.setAttribute("src", src);
+      overlay.classList.add("active");
+    });
+  });
+
+  closeButton.addEventListener("click", () => {
+    overlay.classList.remove("active");
+  });
+  overlay.addEventListener("click", (event) => {
+    if (event.target === overlay) {
+      overlay.classList.remove("active");
+    }
+  });
+});
