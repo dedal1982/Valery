@@ -75,12 +75,36 @@ button {
 }
 .header {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .header__wrapper {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 40px;
+}
+.header__logo {
+  font-family: "Gothic60", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.8px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.header__links {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.header__links li a {
+  font-family: "Gothic60", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
 }
 .promo {
   width: 100%;
