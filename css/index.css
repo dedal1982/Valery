@@ -108,9 +108,54 @@ button {
 }
 .promo {
   width: 100%;
-  height: 100dvh;
   background: url(../images/promo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+.promo__wrapper {
+  height: 100%;
+  display: flex;
+  padding-bottom: 140px;
+  box-sizing: border-box;
+}
+.promo__inner {
+  max-width: 1458px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 117px;
+  margin: 523px auto 0;
+}
+.promo__top {
+  max-width: 528px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-self: flex-end;
+}
+h2 {
+  font-family: "Gothic60", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38.4px;
+  color: #ffffff;
+}
+.promo__button {
+  width: 352px;
+  height: 70px;
+  border: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gothic60", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.promo__bottom {
+  max-width: 592px;
+  width: 100%;
 }
