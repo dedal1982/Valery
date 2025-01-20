@@ -162,6 +162,13 @@ h5 {
   line-height: 15.92px;
   color: #000000;
 }
+h6 {
+  font-family: "Gothic60", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43.2px;
+  color: #000000;
+}
 .promo__button {
   width: 352px;
   height: 70px;
@@ -584,4 +591,26 @@ input:focus::placeholder {
   gap: 20px;
   height: 300px;
   overflow: auto;
+}
+.contacts__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.contacts__items {
+  display: flex;
+  gap: 231px;
+}
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.contacts__list li,
+.contacts__list li a {
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23.88px;
+  color: #000000;
 }
