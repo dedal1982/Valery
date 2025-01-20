@@ -504,3 +504,22 @@ input:focus::placeholder {
   line-height: 28.8px;
   color: #000000;
 }
+/********works*********/
+.works {
+  width: 100%;
+}
+.works__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 185px;
+  padding-bottom: 148px;
+  box-sizing: border-box;
+}
+.works__top {
+  display: flex;
+  gap: 20px;
+}
+.works__top-item {
+  width: 910px;
+  height: 532px;
+}
