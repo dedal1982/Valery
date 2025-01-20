@@ -441,6 +441,7 @@ input:focus::placeholder {
   line-height: 24px;
   color: #000000;
   margin-top: 60px;
+  background: transparent;
 }
 .contact__agreement {
   display: flex;
@@ -454,13 +455,13 @@ input:focus::placeholder {
   border: 2px solid #000000;
   cursor: pointer;
 }
-.contact__agreement span img {
+.contact__check {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: none;
 }
-.contact__agreement span img.active {
+.contact__agreement span.active .contact__check {
   display: block;
 }
 .contact__image {
@@ -471,4 +472,35 @@ input:focus::placeholder {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.footer {
+  width: 100%;
+}
+.footer__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+.footer__link {
+  font-family: "Gothic60", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+}
+.footer__list {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+}
+.footer__list li a {
+  font-family: "Gothic60", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #000000;
 }

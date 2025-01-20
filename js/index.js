@@ -22,3 +22,18 @@ arrowButton.addEventListener("click", () => {
 });
 
 updateSlider();
+
+const checkboxImage = document.getElementById("agreement-checkbox");
+const contactButton = document.querySelector(".contact__form button");
+let isChecked = false;
+
+checkboxImage.addEventListener("click", () => {
+  isChecked = !isChecked;
+  if (isChecked) {
+    checkboxImage.classList.add("active");
+    contactButton.removeAttribute("disabled");
+  } else {
+    checkboxImage.classList.remove("active");
+    contactButton.setAttribute("disabled", true);
+  }
+});
