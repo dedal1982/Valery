@@ -252,7 +252,7 @@ p {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  gap: 250px;
+  gap: 20px;
 }
 .services__text {
   max-width: 890px;
@@ -397,7 +397,7 @@ p {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  gap: 150px;
+  gap: 20px;
 }
 .contact__text {
   max-width: 756px;
@@ -536,7 +536,7 @@ input:focus::placeholder {
   gap: 20px;
 }
 .works__top img {
-  width: 50%;
+  width: calc((100% - 20px) / 2);
   height: 100%;
   object-fit: cover;
 }

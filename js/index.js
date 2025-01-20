@@ -89,12 +89,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  closeButton.addEventListener("click", () => {
-    overlay.classList.remove("active");
-  });
-  overlay.addEventListener("click", (event) => {
-    if (event.target === overlay) {
+  if (closeButton) {
+    closeButton.addEventListener("click", () => {
       overlay.classList.remove("active");
-    }
-  });
+    });
+    overlay.addEventListener("click", (event) => {
+      if (event.target === overlay) {
+        overlay.classList.remove("active");
+      }
+    });
+  }
 });
