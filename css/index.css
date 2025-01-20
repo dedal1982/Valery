@@ -366,3 +366,14 @@ p {
 .about__image-reverse {
   height: 378px;
 }
+.contact {
+  width: 100%;
+}
+.contact__wrapper {
+  padding-top: 185px;
+  padding-bottom: 139px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+}
