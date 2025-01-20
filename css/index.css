@@ -159,3 +159,13 @@ h2 {
   max-width: 592px;
   width: 100%;
 }
+.concept {
+  width: 100%;
+}
+.concept__wrapper {
+  padding-top: 185px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
