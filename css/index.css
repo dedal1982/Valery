@@ -320,3 +320,18 @@ p {
   right: 79px;
   bottom: 87px;
 }
+.about {
+  width: 100%;
+}
+.about__wrapper {
+  padding-top: 185px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.about__inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
