@@ -370,11 +370,7 @@ p {
 .about__item-reverse {
   flex-direction: column-reverse;
 }
-.about__image {
-  width: 724px;
-  height: 338px;
-}
-.about__image img {
+.about__item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
