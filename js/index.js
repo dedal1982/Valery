@@ -37,3 +37,24 @@ checkboxImage.addEventListener("click", () => {
     contactButton.setAttribute("disabled", true);
   }
 });
+
+//отправка заявки
+document
+  .getElementById("submitForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    var formData = new FormData(this);
+    fetch(
+      "https://script.google.com/macros/s/AKfycbzr22fpud68PNb-m9pAfaBxnJtbUHgAUzpmTQRxc5UhSOyUD8Gi9NBzVa0qaZXr_KnvMw/exec",
+      {
+        method: "POST",
+        body: formData,
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        alert("Заявка отправлена!");
+        console.log(data);
+      })
+      .catch((error) => console.error("Error:", error));
+  });

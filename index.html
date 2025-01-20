@@ -352,11 +352,28 @@
               <h4>
                 Понравились мои работы? Оставьте заявку и я с вами свяжусь
               </h4>
-              <form class="contact__form" action="">
-                <input type="text" placeholder="Ваше имя" />
-                <input type="tel" placeholder="Ваш номер телефона" />
-                <input type="email" placeholder="Ваша почта" />
-                <button type="submit" disabled>ОСТАВИТЬ ЗАЯВКУ</button>
+              <form class="contact__form" id="submitForm">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Ваш номер телефона"
+                  id="phone"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Ваша почта"
+                  required
+                />
+                <button type="submit" disabled id="send-button">
+                  ОСТАВИТЬ ЗАЯВКУ
+                </button>
                 <div class="contact__agreement">
                   <span id="agreement-checkbox">
                     <img

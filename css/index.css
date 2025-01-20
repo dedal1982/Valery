@@ -539,31 +539,26 @@ input:focus::placeholder {
   display: flex;
   gap: 20px;
 }
-.works__top-item {
-  width: 50%;
-  height: 532px;
+.works__top img {
+  flex-basis: 50%;
+  height: 100%;
+  object-fit: cover;
 }
-.works__bottom {
+.works__bott {
   display: flex;
   gap: 20px;
 }
-.works__bottom-left {
+.works__bott-left {
   max-width: 538px;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.works__bottom-right {
-  max-width: 724px;
+.works__bott-left img {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.works__right-top {
-  display: flex;
-  gap: 20px;
+  height: 100%;
+  object-fit: cover;
 }
 /*****contacts*****/
 .contacts {
