@@ -393,3 +393,28 @@ p {
 .contact__text h4 {
   margin-top: 60px;
 }
+.contact__form {
+  width: 481px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 60px;
+}
+input {
+  width: 294.01px;
+  height: 46px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  outline: none;
+}
+input,
+input::placeholder {
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23.88px;
+  color: #000000;
+}
+input:focus::placeholder {
+  color: transparent;
+}
