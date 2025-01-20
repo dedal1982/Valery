@@ -137,6 +137,13 @@ button {
 h2 {
   font-family: "Gothic60", sans-serif;
   font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
+  color: #000000;
+}
+h3 {
+  font-family: "Gothic60", sans-serif;
+  font-weight: 400;
   font-size: 32px;
   line-height: 38.4px;
   color: #ffffff;
@@ -216,9 +223,15 @@ p {
 }
 .services__wrapper {
   width: 100%;
-  padding-top: 180px;
+  padding-top: 185px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   gap: 250px;
+}
+.services__text {
+  max-width: 890px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
