@@ -332,6 +332,37 @@ p {
 }
 .about__inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
+}
+.about__item {
+  max-width: 724px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.about__item-reverse {
+  flex-direction: column-reverse;
+}
+.about__image {
+  width: 724px;
+  height: 338px;
+}
+.about__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about__photo {
+  width: 352px;
+  height: 504px;
+}
+.about__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about__image-reverse {
+  height: 378px;
 }
